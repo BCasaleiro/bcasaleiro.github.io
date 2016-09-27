@@ -29,7 +29,6 @@ hr {
   display: block;
   max-width: 900px;
   padding-top: 5px;
-
   font-family: 'Raleway', sans-serif;
   font-size: 32px;
   font-weight: 400;
@@ -38,7 +37,6 @@ hr {
 .bio-text {
   display: block;
   padding-bottom: 30px;
-  max-width: 650px;
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
   font-weight: 400;
@@ -72,4 +70,10 @@ footer {
 footer a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+@media screen and (min-device-width: 768px) {
+  .bio-text {
+     max-width: 650px;
+   }
 }
