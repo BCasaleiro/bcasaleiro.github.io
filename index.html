@@ -7,29 +7,92 @@
     <meta name="author" content="Bernardo Casaleiro">
     <meta name="description" content="Bernardo Casaleiro. Software Engineer. Student at Técnico in Lisbon.">
     <meta name="keywords" content="bcasaleiro,bernardo,casaleiro,software,engineer,algorithms,artificial,intelligence">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <style>
+      @font-face {
+        font-family: 'Raleway';
+        src: url(fonts/raleway.ttf);
+      }
 
-    <link rel="stylesheet" href="main.css">
+      body {
+        margin: 0;
+        padding: 100px 50px;
+        background-color:#383838;
+        color: #FFFFFF;
+      }
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      .container {
+        width: auto;
+        max-width: 1100px;
+        margin: 0px auto;
+      }
+
+      header #title {
+        display: block;
+        font-family: 'Raleway', serif;
+        font-size: 40px;
+        font-weight: 500;
+      }
+
+      header #subtitle {
+        display: block;
+        max-width: 900px;
+        padding-top: 5px;
+        font-family: 'Raleway', serif;
+        font-size: 32px;
+        font-weight: 400;
+      }
+
+      header hr {
+        max-width:150px;
+        margin: 50px 0px;
+        border: 1px solid #FFFFFF;
+      }
+
+      main span {
+        display: block;
+        max-width: 650px;
+        padding-bottom: 30px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      footer ul {
+        list-style: none;
+        padding-left: 0px;
+      }
+
+      footer ul li {
+        margin: 3px 0px;
+      }
+
+      footer ul li a {
+        font-family: 'Raleway', serif;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #FFFFFF;
+      }
+
+      @media screen and (max-device-width: 768px) {
+        main span {
+           max-width: none;
+         }
+      }
+    </style>
   </head>
   <body>
+    <header class="container">
+      <span id="title">Bernardo Casaleiro</span>
+      <span id="subtitle">I'm a Software Engineer</span>
 
-  <div class="container">
-    <div class="top">
-      <span id="title">
-        Bernardo Casaleiro
-      </span>
+      <hr>
+    </header>
 
-      <span id="desc">
-        I'm a Software Engineer
-      </span>
-    </div>
-
-    <hr>
-
-    <div id="bio">
-      <span class="bio-text">
+    <main class="container">
+      <span>
         I've always liked puzzles and in my last high school year I was introduced
         to a new kind of puzzle, programming! I decided that's what I wanted to do
         for a living and I started studying Software Engineering at the University of
@@ -41,28 +104,18 @@
         projects where I developed for Android and the Web.
       </span>
 
-      <span class="bio-text">
+      <span>
         I'm now taking my Masters degree in Algorithms and Intelligence Systems at Técnico
         in Lisbon and looking forward to more puzzles!
       </span>
-    </div>
+    </main>
 
-    <ul class="links">
-      <li> <a href="https://github.com/bcasaleiro" target="_blank">Github</a> </li>
-      <li> <a href="https://twitter.com/bcasaleiro"  target="_blank">Twitter</a> </li>
-      <li> <a href="mailto:bernardocasaleiro@gmail.com"  target="_blank">Contact</a> </li>
-    </ul>
-  </div>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-89926107-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-
+    <footer class="container">
+      <ul>
+        <li> <a href="https://github.com/bcasaleiro" target="_blank">Github</a> </li>
+        <li> <a href="https://twitter.com/bcasaleiro"  target="_blank">Twitter</a> </li>
+        <li> <a href="mailto:bernardocasaleiro@gmail.com"  target="_blank">Contact</a> </li>
+      </ul>
+    </footer>
   </body>
 </html>
