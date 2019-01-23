@@ -5,117 +5,134 @@
 
     <meta charset="utf-8">
     <meta name="author" content="Bernardo Casaleiro">
-    <meta name="description" content="Bernardo Casaleiro. Software Engineer. Student at Técnico in Lisbon.">
-    <meta name="keywords" content="bcasaleiro,bernardo,casaleiro,software,engineer,algorithms,artificial,intelligence">
+    <meta name="description" content="Bernardo Casaleiro - Artificial Intelligence Engineer.">
+    <meta name="keywords" content="bcasaleiro,bernardo,casaleiro,software,algorithms,artificial,intelligence">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
       @font-face {
-        font-family: 'Raleway';
-        src: url(fonts/raleway.ttf);
+        font-family: Montserrat;
+        src: url(fonts/Montserrat-Regular.ttf);
+        font-weight: 400;
+      }
+
+      @font-face {
+        font-family: Montserrat;
+        src: url(fonts/Montserrat-Light.ttf);
+        font-weight: 300;
       }
 
       body {
-        margin: 0;
-        padding: 100px 50px;
+        margin: 4rem 0 1rem 0;
         background-color:#383838;
         color: #FFFFFF;
       }
 
       .container {
-        width: auto;
         max-width: 1100px;
-        margin: 0px auto;
+        margin: 0 auto;
       }
 
-      header #title {
-        display: block;
-        font-family: 'Raleway', serif;
-        font-size: 40px;
-        font-weight: 500;
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+      }
+      
+      h2 {
+        margin: 0;
+        padding: 0.5rem 0 0 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+      }
+      
+      hr {
+        max-width: 150px;
+        margin: 3rem 0;
+        border: 1px solid #FFF;
       }
 
-      header #subtitle {
-        display: block;
-        max-width: 900px;
-        padding-top: 5px;
-        font-family: 'Raleway', serif;
-        font-size: 32px;
-        font-weight: 400;
-      }
-
-      header hr {
-        max-width:150px;
-        margin: 50px 0px;
-        border: 1px solid #FFFFFF;
-      }
-
-      main span {
-        display: block;
+      p {
         max-width: 650px;
-        padding-bottom: 30px;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 16px;
-        font-weight: 400;
+        margin: 0;
+        padding: 0 0 1.5rem 0;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1rem;
       }
 
-      footer ul {
-        list-style: none;
-        padding-left: 0px;
-      }
-
-      footer ul li {
-        margin: 3px 0px;
-      }
-
-      footer ul li a {
-        font-family: 'Raleway', serif;
-        font-size: 18px;
-        font-weight: 500;
+      p a {
         text-decoration: none;
-        color: #FFFFFF;
+        color: #FFF;
       }
 
-      @media screen and (max-device-width: 768px) {
-        main span {
-           max-width: none;
-         }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      ul li {
+        margin: 0.3rem 0;
+      }
+
+      ul li a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-decoration: none;
+        color: #FFF;
+      }
+      
+      @media (max-width: 1200px) {
+        .container {
+          margin: 0 2rem;
+        }
+      }
+
+
+      @media (max-width: 600px) {
+        body {
+          margin: 2rem 0 1rem 0;
       }
     </style>
   </head>
   <body>
-    <header class="container">
-      <span id="title">Bernardo Casaleiro</span>
-      <span id="subtitle">I'm a Software Engineer</span>
+    <header>
+      <div class="container">
+        <h1>Bernardo Casaleiro</h1>
+        <h2>I'm an Artificial Intelligence Engineer</h2>
 
-      <hr>
+        <hr>
+      </div>
     </header>
 
-    <main class="container">
-      <span>
-        I've always liked puzzles and in my last high school year I was introduced
-        to a new kind of puzzle, programming! I decided that's what I wanted to do
-        for a living and I started studying Software Engineering at the University of
-        Coimbra. In my first year I joined JeKnowledge, a Junior Enterprise where
-        I created a small JavaScript library to make the creation of maps using Google
-        Maps easier and also worked in other Web Development projects. In my second year
-        I got an offer to work as a Web Developer at Stratio, a small startup based
-        in Coimbra responsible for Traderline and now moving to intracity mobility
-        projects where I developed for Android and the Web.
-      </span>
+    <main>
+      <div class="container">
+        <p>
+        Since I was a child, I've always liked puzzles. In my last year of high school, I was introduced to a new kind of puzzle: Programming! I decided that's what I wanted to do for a living and I took my Bachelor's degree in Software Engineering at the University of Coimbra. During the first year, I joined <a href="https://jeknowledge.pt/">JeKnowledge</a>, a Junior Enterprise where I worked on several web development projects and developed a JavaScript library to simplify map creation using Google Maps. After a year I joined <a href="https://stratioautomotive.com/">Stratio</a>, a small startup applying machine learning to failure prediction in large automotive fleets where I developed for Android and the Web.
+        </p>
 
-      <span>
-        I'm now taking my Masters degree in Algorithms and Intelligence Systems at Técnico
-        in Lisbon and looking forward to more puzzles!
-      </span>
+        <p>
+        After finishing my Bachelor's degree, I moved to Lisbon to study Artificial Intelligence and took my Master's in Information Systems and Computer Engineering with a focus on algorithms and intelligent systems at Instituto Superior Técnico. During my Master's second year, I developed my thesis on Morphosyntactic Label Disambiguation for European Portuguese. I also joined <a href="https://muse.ai/">muse.ai</a> where I implemented pipelines for object recognition, OCR and action recognition, and their respective curation tools.
+        </p>
+
+        <p>
+          I'm now looking forward to more puzzles!
+        </p>
+      </div>
     </main>
 
-    <footer class="container">
-      <ul>
-        <li> <a href="https://github.com/bcasaleiro" target="_blank">Github</a> </li>
-        <li> <a href="https://twitter.com/bcasaleiro"  target="_blank">Twitter</a> </li>
-        <li> <a href="mailto:bernardocasaleiro@gmail.com"  target="_blank">Contact</a> </li>
-      </ul>
+    <footer>
+      <div class="container">
+        <ul>
+          <li> <a href="https://github.com/bcasaleiro" target="_blank">Github</a> </li>
+          <li> <a href="https://twitter.com/bcasaleiro"  target="_blank">Twitter</a> </li>
+          <li> <a href="mailto:bernardocasaleiro@gmail.com"  target="_blank">Contact</a> </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
